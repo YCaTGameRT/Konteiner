@@ -38,11 +38,11 @@ void ShowVector() {
 	arr.size(); //кол-во элементов
 	arr.capacity(); //сколько выделено памяти
 
-	for (auto x : arr) {
+	for (auto &x : arr) {
 
 	}
 
-	for (auto it = arr.begin(); it != arr.end(); it++) {
+	for (auto it = arr.begin(); it != arr.end(); ++it) {
 		std::cout << *it;
 	}
 
